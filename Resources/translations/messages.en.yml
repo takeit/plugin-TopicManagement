@@ -1,0 +1,6 @@
+Plugins: Plugins
+plugin:
+  topics:
+    title: "Test plugin page"
+    titlecontent: Topic management
+    content: Topic management plugin

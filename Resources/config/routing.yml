@@ -1,0 +1,4 @@
+newscoop_topicmanagement_plugin:
+    resource: "@NewscoopTopicManagementPluginBundle/Controller/"
+    type:     annotation
+    prefix:   /
