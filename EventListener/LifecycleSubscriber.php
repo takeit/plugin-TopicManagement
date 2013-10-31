@@ -1,6 +1,6 @@
 <?php
 /**
- * @package Newscoop\CommentListsBundle
+ * @package Newscoop\TopicManagementPluginBundle
  * @author Rafał Muszyński <rafal.muszynski@sourcefabric.org>
  * @copyright 2013 Sourcefabric o.p.s.
  * @license http://www.gnu.org/licenses/gpl-3.0.txt
@@ -56,6 +56,8 @@ class LifecycleSubscriber implements EventSubscriberInterface
     }
 
     private function getClasses(){
-        return array();
+        return array(
+            $this->em->getClassMetadata('Newscoop\TopicManagementPluginBundle\Entity\UserTopics'),
+        );
     }
 }
